@@ -3,11 +3,8 @@ description: AL BASHAARIY - A comprehensive Arabic library.
 publish_to: "none"
 version: 1.0.0+1
 environment:
-  sdk: ">=3.3.0 <4.0.0"
-
-dependencies:
-  flutter:
-    sdk: flutter
+  sdk: ">=3.3.0 <4.
+    sdk:sdk: ">=3.3.0 <4.0.0"
   cupertino_icons: ^1.0.8
   share_plus: ^10.1.4
   path_provider: ^2.1.5
