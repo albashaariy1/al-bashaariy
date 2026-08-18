@@ -1,24 +1,20 @@
-name: al_bashaariy
-description: AL BASHAARIY - A comprehensive Arabic library.
-publish_to: "none"
-version: 1.0.0+1
-environment:
-  sdk: ">=3.3.0 <4.
-    sdk:sdk: ">=3.3.0 <4.0.0"
-  cupertino_icons: ^1.0.8
-  share_plus: ^10.1.4
-  path_provider: ^2.1.5
-  flutter_tts: ^4.2.0
-  audioplayers: ^6.1.0
-  just_audio: ^0.9.46
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^4.0.0
-
-flutter:
-  uses-material-design: true
-  assets:
-    - assets/audio/poem_demo.mp3
-
+1  name: al_bashaariy
+2  description: AL BASHAARIY
+3  publish_to: "none"
+4  version: 1.0.0+1
+5  environment:
+6    sdk: ">=3.3.0 <4.0.0"
+7  dependencies:
+8    flutter:
+9      sdk: flutter
+10   cupertino_icons: ^1.0.8
+11   share_plus: ^7.2.2
+12   path_provider: ^2.1.3
+13   flutter_tts: ^4.0.0
+14   audioplayers: ^5.2.0
+15   just_audio: ^0.9.42
+16 
+17  dev_dependencies:
+18    flutter_test:
+19      sdk: flutter
+20    flutter_lints: ^4.0.0
