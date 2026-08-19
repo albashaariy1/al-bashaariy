@@ -565,8 +565,24 @@ will not taste perfection, not even a little.''';
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(_formatDuration(position), style: const TextStyle(fontSize: 10)),
-              Text(_formatDuration(duration), style: const TextStyle(fontSize: 10)),
+          class _PoemPageState extends State<PoemPage> {
+              AudioPlayer audioPlayer = AudioPlayer();
+                Duration position = Duration.zero; // <-- ADD THIS LINE
+                  Duration duration = Duration.zero; // <-- ADD THIS LINE
+                    bool isPlaying = false;
+                      
+                        @override
+                          void initState() {
+                              super.initState();
+                                  
+                                      // <-- ADD THESE 3 LINES
+                                          audioPlayer.onPositionChanged.listen((p) => setState(() => position = p));
+                                              audioPlayer.onDurationChanged.listen((d) => setState(() => duration = d));
+                                                  audioPlayer.onPlayerStateChanged.listen((s) => setState(() => isPlaying = s == PlayerState.playing));
+                                                      
+                                                          // keep your other init code here
+                                                            }
+          }    ),
             ],
           ),
         ],
