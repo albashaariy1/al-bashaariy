@@ -675,19 +675,17 @@ Read • Save • Share
       shareText.trim(),
       subject: 'AL BASHAARIY | $title',
     );
-  }
-
-
+  
   Future<void> _toggleAudio() async {
     try {
       if (playing) {
-        await player.pause();
+        await Audio player.pause();
         setState(() => playing = false);
         return;
       }
 
-      await player.play(AssetSource('poem_audio.wav'));
-      setState(() => playing = true);
+      await Audio player.play(AssetSource('poem_audio.wav'));
+      setState(() => isplaying = true);
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
